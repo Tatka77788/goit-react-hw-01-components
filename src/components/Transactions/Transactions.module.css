@@ -1,0 +1,24 @@
+.tHead {
+  margin: 0 auto;
+  background-color: rgb(191, 186, 211);
+  color: blueviolet;
+  padding: 30px 40px;
+  border: 1px solid blue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.table {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.tr {
+  background: rgb(210, 208, 216);
+  color: black;
+  padding: 30px 30px;
+  border: 1px solid;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
