@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Profile from "./Profile/Profile";
 import user from "../templates/User.json";
 import statisticalData from "../templates/Statistics.json";
@@ -20,8 +19,4 @@ const App = () => {
   );
 };
 
-App.propTypes = {
-  user: PropTypes.object.isRequired,
-  friends: PropTypes.array.isRequired
-};
 export default App;

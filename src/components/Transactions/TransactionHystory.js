@@ -4,7 +4,6 @@ import TransactionItem from "./TransactionItem";
 import styles from "../Transactions/Transactions.module.css";
 
 const TransactionHistory = ({ items }) => {
-  console.log(items);
   return (
     <table className={styles.table}>
       <thead className={styles.tHead}>

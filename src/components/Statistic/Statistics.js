@@ -8,7 +8,9 @@ function Statistic({ title, stats }) {
     <section className={styles.statistics}>
       <h2 className={styles.title}>{title}</h2>
       <ul className={styles.statList}>
-        <StatsItem stats={stats} />
+        {stats.map(({ id, label, percentage }) => (
+          <StatsItem key={id} label={label} percentage={percentage} />
+        ))}
       </ul>
     </section>
   );
@@ -16,7 +18,7 @@ function Statistic({ title, stats }) {
 Statistic.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
-    PropTypes.shape({
+    PropTypes.exact({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired
